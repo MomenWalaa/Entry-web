@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eatery | Modern Egyptian Kitchen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Eatery</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#about">About</a>
+        <a href="#top-meals">Top 3 Meals</a>
+        <a href="#menu">Daily Menu</a>
+        <a href="#contact" class="nav-cta">Book &amp; Feedback</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 1. Heading and Short Description -->
+    <section id="about" class="hero">
+      <div class="container hero-card">
+        <span class="badge">Authentic Egyptian Kitchen &middot; Cairo</span>
+        <h1>Eatery</h1>
+        <p class="hero-desc">
+          Modern Egyptian dining rooted in classic Cairo recipes. From slow-simmered homestyle stews to crisp street favorites, every dish is prepared fresh daily in a warm, sunlit space.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn-primary">Explore Daily Menu</a>
+          <a href="#contact" class="btn-secondary">Reserve a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Ordered List (Top 3 Meals) & 3. Image of Best Seller -->
+    <section id="top-meals" class="section">
+      <div class="container feature-grid">
+        <div class="surface-card">
+          <div class="section-head">
+            <span class="kicker">Most Loved</span>
+            <h2>Top 3 Meals</h2>
+          </div>
+
+          <ol class="ranked-meals">
+            <li>
+              <div class="meal-info">
+                <strong>Fattah with Beef &amp; Garlic Tomato Sauce</strong>
+                <span>Crispy toasted baladi bread layered with seasoned rice, tender beef, and tangy garlic-vinegar tomato sauce.</span>
+              </div>
+            </li>
+            <li>
+              <div class="meal-info">
+                <strong>Alexandrian Liver (Kebda Eskandarani)</strong>
+                <span>Sliced beef liver pan-seared with green peppers, garlic, cumin, coriander, and fresh lemon juice.</span>
+              </div>
+            </li>
+            <li>
+              <div class="meal-info">
+                <strong>Stuffed Pigeon (Hamam Mahshi)</strong>
+                <span>Tender roasted pigeon stuffed with aromatic spiced freekeh or seasoned rice.</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <figure class="surface-card bestseller-showcase">
+          <div class="image-wrapper">
+            <img 
+              src="images.jfif" 
+              alt="Alexandrian Liver and Grilled Favorites at Eatery" 
+              width="480" 
+              height="320"
+            >
+            <span class="floating-tag">#1 Best Seller</span>
+          </div>
+          <figcaption>
+            <strong>Alexandrian Liver &amp; House Bread</strong>
+            <span>Freshly prepared to order every day</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 4. Daily Menu Table (Two Columns: Item and Price) -->
+    <section id="menu" class="section">
+      <div class="container">
+        <div class="surface-card menu-wrapper">
+          <div class="section-head center">
+            <span class="kicker">Fresh Today</span>
+            <h2>Daily Menu</h2>
+          </div>
+
+          <table class="menu-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fattah with Beef &amp; Garlic Tomato Sauce</td>
+                <td>210 EGP</td>
+              </tr>
+              <tr>
+                <td>Kebda Eskandarani</td>
+                <td>145 EGP</td>
+              </tr>
+              <tr>
+                <td>Hamam Mahshi</td>
+                <td>225 EGP</td>
+              </tr>
+              <tr>
+                <td>Sogoq Sharqi (Spiced Egyptian Sausage)</td>
+                <td>140 EGP</td>
+              </tr>
+              <tr>
+                <td>Bamya (Okra Stew) with Rice</td>
+                <td>165 EGP</td>
+              </tr>
+              <tr>
+                <td>Roz Bel Laban (Baked Egyptian Rice Pudding)</td>
+                <td>65 EGP</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Booking & Feedback Form -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="surface-card form-wrapper">
+          <div class="section-head center">
+            <span class="kicker">Visit or Reach Out</span>
+            <h2>Table Booking &amp; Feedback</h2>
+          </div>
+
+          <form action="#" method="post" class="booking-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Write your table reservation time, guest count, or feedback..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary submit-full">Send Booking / Feedback</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Eatery</strong> &mdash; Modern Egyptian Kitchen</p>
+      <p class="footer-note">Crafted with fresh local ingredients</p>
+    </div>
+  </footer>
+
+</body>
+</html>
